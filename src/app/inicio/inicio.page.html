@@ -1,0 +1,17 @@
+<!-- <ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-header collapse="condense">
+      <ion-title size="large">inicio</ion-title>
+    </ion-header>
+  </div>
+</ion-content> -->
+
+<div *ngFor='let pais of paises'>
+  <label>nombre: {{pais.nombre}}</label>
+
+  <!-- Si el pais es independiente muestra "Independiente" y si no lo es muestra "Dependiente" -->
+   <div>
+    <p>pais: <b> {{pais.esIndependiente?'Independiente':'Dependiente'}} </b> </p>
+    <img src="{{pais.bandera}}" alt="bandera">
+  </div>
+</div>

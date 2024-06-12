@@ -1,0 +1,74 @@
+#title{
+  justify-content: center;
+  background-color: rgb(13, 84, 126);
+  padding-top: 50px;
+  color: #cfcfcf;
+
+}
+
+#imag{
+  background: linear-gradient(to bottom, rgb(13, 84, 126), #1b253b); 
+
+}
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  // transform: translateY(-50%);
+  background-color: #1b253b;
+}
+
+#mail{
+  margin-top: 60px;
+  margin-bottom: 30px;
+  width: 350px;
+  padding: 8px;
+  background-color: #1b253b;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 20px;
+  color: #fff; 
+}
+#mail:focus {
+  border-color: #66afe9;         /* Color del borde al enfocar */
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* Sombra al enfocar */
+  outline: none;             /* Quitar el outline predeterminado */
+  color: #fff;
+}
+#password{
+  margin-bottom: 15px;
+  width: 350px;
+  padding: 8px;
+  background-color: #1b253b;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 20px;
+  color: #fff; 
+}
+#password:focus{
+  border-color: #66afe9;         /* Color del borde al enfocar */
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* Sombra al enfocar */
+  outline: none;    
+  color: #fff;    
+}
+#icon-visible{
+  position: absolute;
+  right: 50px;
+  font-size: 29px;
+  color: #666;
+}
+#boton_inicio {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 150px;
+}
+#footer{
+  color: #616161;
+  margin-bottom: 30px;
+}

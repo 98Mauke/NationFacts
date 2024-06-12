@@ -1,0 +1,38 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+  <div id="header">
+    <ion-header collapse="condense" >
+        <ion-title size="large" id="title">NationFacts</ion-title>
+        <ion-img id="imag" src="assets/logo.png"/>
+    </ion-header>
+  </div>
+  <div id="container">
+    <form [formGroup]="formLogin" (ngSubmit)="login($event)">
+      <input formControlName="email" type="text" placeholder="Email" id="mail" >
+      <input formControlName="password" type="password" placeholder="Password" id="password">
+      <ion-icon name="eye-outline" id="icon-visible"></ion-icon>
+      
+      <div id="boton_inicio">
+        <ion-button 
+          color="primary" 
+          size="large" 
+          shape="round"
+          type="submit">Iniciar sesion
+        </ion-button>
+      </div>
+    </form>
+    <div id="footer">
+      <p id="texto">¿No tenés una cuenta?</p>
+      <a [routerLink]="['/register']" id="direccion-registro">Registrate</a>
+    </div>
+  </div>
+</ion-content>
+
+<!-- añadir que los usuarios puedan agregar favoritos-->

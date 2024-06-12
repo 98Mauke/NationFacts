@@ -1,0 +1,72 @@
+
+#container {
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(13, 84, 126), #1b253b); /* De arriba hacia abajo */
+}
+#titulo {
+    color: #cfcfcf;
+    // left: 1000px;
+    font-size: 55px;
+    padding-top: 130px;
+}
+#flecha-atras{
+    position: absolute;
+    top: 15px;
+    left: 7px;
+    font-size: 40px;
+}
+#menu{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 38px;
+    text-align: center;
+    height: 650px;
+    width: 350px;
+    background-color: rgb(175, 178, 185);
+    border-radius: 20px;
+    font-size: 20px;
+    color: #1b253b;
+    padding-top: 100px;
+}
+#texto-usuario {
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+#input-usuario{
+    width: 270px;
+
+    padding: 8px;
+    background-color: rgb(175, 178, 185);
+    color: #0f0f0f;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    // margin-top: 5px;
+    margin-bottom: 30px;
+}
+#texto-mail{
+    margin-bottom: 0px;
+}
+#input-mail {
+    width: 270px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: rgb(175, 178, 185);
+    padding: 8px;
+    color: #0f0f0f;
+    margin-bottom: 30px;
+}
+#texto-password{
+    margin-bottom: 0px;
+}
+#input-password{
+    width: 270px;
+    padding: 8px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: rgb(175, 178, 185);
+    color: #0f0f0f;
+    margin-bottom: 60px;
+}

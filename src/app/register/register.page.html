@@ -1,0 +1,32 @@
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div id="header">
+      <ion-header collapse="condense">
+        <ion-icon name="chevron-back-outline" id="flecha-atras" [routerLink]="['/home']"></ion-icon>
+        <ion-title size="large" id="titulo">Crea tu cuenta</ion-title>
+      </ion-header>
+    </div>
+    <div id="menu">
+      <form [formGroup]="formRegister" (ngSubmit)="register($event)">
+        <p id="texto-usuario">Usuario</p>
+        <input type="text" id="input-usuario" required="" formControlName="username">
+        
+        <p id="texto-mail">Email</p>
+        <input type="email" id="input-mail" required="" formControlName="email">
+
+        <p id="texto-password">Contraseña</p>
+        <input type="password" id="input-password" required="" formControlName="password">
+
+        <div id="boton_inicio">
+          <ion-button 
+            color="primary" 
+            size="large" 
+            shape="round"
+            type="submit">Crear cuenta
+          </ion-button>
+        </div>
+      </form>
+    </div>
+  </div>
+</ion-content>
