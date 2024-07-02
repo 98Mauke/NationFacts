@@ -9,6 +9,10 @@ import { AuthService } from '../services/auth.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  passwordType: string = 'password';
+  passwordIcon: string = 'eye-off';
+  password: string | undefined;
+
   formBuilder = inject(FormBuilder);
   serviceAuth: AuthService = inject(AuthService);
 
@@ -18,6 +22,16 @@ export class HomePage {
   });
 
   constructor() {}
+
+  togglePasswordVisibility(): void {
+    if (this.passwordType === 'password') {
+      this.passwordType = 'text';
+      this.passwordIcon = 'eye';
+    } else {
+      this.passwordType = 'password';
+      this.passwordIcon = 'eye-off';
+    }
+  }
 
   login(event: Event) {
     event.preventDefault();

@@ -15,9 +15,11 @@
   </div>
   <div id="container">
     <form [formGroup]="formLogin" (ngSubmit)="login($event)">
-      <input formControlName="email" type="text" placeholder="Email" id="mail" >
-      <input formControlName="password" type="password" placeholder="Password" id="password">
-      <ion-icon name="eye-outline" id="icon-visible"></ion-icon>
+      <input formControlName="email" type="text" placeholder="Email" id="mail">
+      <input formControlName="password"  placeholder="Password" id="password" [type]="passwordType" [(ngModel)]="password">
+      
+      <ion-icon name="eye-outline" id="icon-visible" (click)="togglePasswordVisibility()" [name]="passwordIcon"></ion-icon>
+
       
       <div id="boton_inicio">
         <ion-button 

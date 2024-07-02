@@ -19,14 +19,12 @@
         <input type="password" id="input-password" required="" formControlName="password">
 
         <div id="boton_inicio">
-          <ion-button 
-            color="primary" 
-            size="large" 
-            shape="round"
-            type="submit">Crear cuenta
-          </ion-button>
+          <ion-button color="primary" size="large" shape="round" type="submit" id="open-toast" >Crear cuenta</ion-button>
+          <ion-toast trigger="open-toast" message="¡Usario registrado!" [duration]="5000"></ion-toast>
         </div>
       </form>
     </div>
   </div>
 </ion-content>
+
+
